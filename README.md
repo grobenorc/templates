@@ -1,2 +1,2 @@
 # templates
-Templates of different models
+Templates/reference of different models.
