@@ -158,9 +158,6 @@ n_estimator_max_depth_search = GridSearchCV(model,
 
 n_estimator_max_depth_search.fit(X_train, y_train)
 
-print(f'Best maximum depth {n_estimator_max_depth_search.best_params_}.')
-
-
 CV_results = pd.concat([pd.DataFrame(n_estimator_max_depth_search.cv_results_['params']),
                         pd.Series(n_estimator_max_depth_search.cv_results_['mean_test_score'], name='mean_test_score')], 
                         axis=1)
